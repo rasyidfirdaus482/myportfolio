@@ -18,6 +18,7 @@ body {
   font-family: var(--font-base);
 }
 
+
 .card .img {
   overflow: hidden;
 }
@@ -74,10 +75,40 @@ img {
 
   .navbar-brand img {
     border: 5px solid var(--color-brand);
-  }
+    position: absolute; /* Ganti absolute dengan relative */
+    top: 5%;
+    left: 20%;
+    padding: 10px;;
+}
+
+.navbar-brand img::after {
+    content: ''; /* Menambahkan content kosong untuk membuat pseudo-elemen terlihat */
+    display: block; /* Menjadikan pseudo-elemen elemen block */
+    width: 100%; /* Mengatur lebar pseudo-elemen sesuai dengan lebar gambar */
+    height: 5px; /* Tinggi garis bawah */
+    background-color: #0f4a54; /* Warna garis bawah */
+    position: absolute; /* Posisi pseudo-elemen harus absolute */
+    bottom: -10px; /* Mengatur posisi garis bawah di bawah gambar */
+    left: 0; /* Memastikan garis mulai dari kiri gambar */
+}
+
 
   #content-wrapper {
     margin-left: var(--sidbar-width);
+  }
+  ul {
+    width: 150px;
+
+  }
+
+  li a{
+    display: flex;
+    margin-top: 10px;
+  }
+  a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -208,19 +239,13 @@ img {
   font-size: 24px;
 }
 .profilepic {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
+  -webkit-box-shadow:0px 0px 60px 4px rgba(46,157,255,0.71);
+  -moz-box-shadow: 0px 0px 60px 4px rgba(46,157,255,0.71);
+  box-shadow: 0px 0px 60px 4px rgba(46,157,255,0.71);
 }
 
-.custom-container {
-  padding-left: 0; /* Sesuaikan nilai ini sesuai kebutuhan */
-  padding-right: 0; /* Sesuaikan nilai ini sesuai kebutuhan */
-  width: 200px;
-}
-
-.navbar-nav .nav-link {
-  padding-right: 10px; /* Memberi ruang antara teks dan ikon */
-}
 
 
 @media (max-width: 422px) {

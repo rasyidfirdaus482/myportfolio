@@ -18,10 +18,25 @@
 
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
+  <!-- Modal -->
+  <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pdfModalLabel">CV Rasyid Firdaus Harmaini</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe src="" id="pdfFrame" width="100%" height="500px"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container flex-lg-column custom-container">
-      <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+    <div class="container flex-lg-column w-100">
+      <a class="navbar-brand mx-lg-auto mb-4" href="#">
         <span class="fw-bold h3 d-block d-lg-none">Rasyid Firdaus Harmaini</span>
         <img src="./assets/images/profilepic1.png" class="d-none d-lg-block rounded-circle profilepic" />
       </a>
@@ -29,8 +44,8 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto flex-lg-column text-lg-left justify-content-between">
+      <div class="collapse navbar-collapse" id="navbarNav" style="width: 300px;">
+        <ul class="navbar-nav m-auto flex-lg-column text-lg-left justify-content-between">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#home">
               Beranda
@@ -99,8 +114,9 @@
             <div data-aos="fade-up" data-aos-delay="600">
               <a href="#work" class="btn btn-brand fw-bold me-4">
                 JELAJAHI KARYA SAYA</a>
-              <a href="#work" class="btn btn-brand fw-bold me-4">
-                Download CV</a>
+              <a href="#pdfModal" class="btn btn-brand fw-bold me-4" data-bs-toggle="modal" id="downloadCvBtn">
+                Download CV
+              </a>
               <a href="" class="custom-link num"> Hubungi: 083167961562</a>
             </div>
           </div>

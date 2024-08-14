@@ -14,3 +14,8 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+document.getElementById('downloadCvBtn').addEventListener('click', function () {
+  var pdfUrl = "assets/resume/22101152630431_Rasyid_Firdaus_Harmaini_Magang.pdf";
+  document.getElementById('pdfFrame').src = pdfUrl;
+});
