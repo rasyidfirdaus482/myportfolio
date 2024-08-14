@@ -3,12 +3,13 @@
 :root {
   --color-body: #b6cbce;
   --color-heading: #eef3db;
-  --color-base: #057786;
+  --color-base: #002f3c;
   --color-base2: #022a30;
   --color-brand: #6fb9ff;
-  --color-brand2: #46540f;
+  --color-brand2: #0f4a54;
   --sidbar-width: 240px;
   --font-base: "Kanit";
+  --color-tombol: rgb(255, 251, 0);
 }
 
 body {
@@ -45,7 +46,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-brand);
+  color: var(--color-tombol);
 }
 
 img {
@@ -58,7 +59,7 @@ img {
   color: white;
 }
 .navbar .nav-link:hover {
-  color: var(--color-brand);
+  color: var(--color-tombol);
 }
 
 @media (min-width: 992px) {
@@ -147,7 +148,7 @@ img {
 .btn-brand:focus {
   background-color: var(--color-brand2);
   border: 2px solid var(--color-brand2);
-  color: var(--color-base);
+  color: var(--color-tombol);
 }
 /* //BTN */
 
