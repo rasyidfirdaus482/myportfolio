@@ -212,9 +212,21 @@ img {
   height: 180px;
 }
 
+.custom-container {
+  padding-left: 0; /* Sesuaikan nilai ini sesuai kebutuhan */
+  padding-right: 0; /* Sesuaikan nilai ini sesuai kebutuhan */
+  width: 200px;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 10px; /* Memberi ruang antara teks dan ikon */
+}
+
+
 @media (max-width: 422px) {
   .num {
     padding-top: 2rem;
     display: block;
   }
 }
+
