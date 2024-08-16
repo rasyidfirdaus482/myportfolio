@@ -314,7 +314,7 @@
     </section>
     <!-- //KARYA -->
 
-    <section id="dokumentasi" class="full-hight px-lg-5">
+    <section id="dokumentasi" class="full-height px-lg-5">
       <div class="container gy-4">
         <div class="col-md-8" data-aos="fade-up">
           <h6>Dokumentasi</h6>
@@ -322,12 +322,14 @@
         </div>
       </div>
       <div class="container gy-4">
-        <iframe
-          src="https://docs.google.com/presentation/d/1Kx-3hcOnTvyrQhuU1v7rnTkc0UEkl6xRJ_iFUSjRRHI/embed?start=true&loop=true&delayms=3000"
-          frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
-          webkitallowfullscreen="true"></iframe>
+        <div class="iframe-container">
+          <iframe
+            src="https://docs.google.com/presentation/d/1Kx-3hcOnTvyrQhuU1v7rnTkc0UEkl6xRJ_iFUSjRRHI/embed?start=true&loop=true&delayms=3000"
+            frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
       </div>
     </section>
+
 
     <!-- TENTANG -->
     <section id="about" class="full-hight px-lg-5">
@@ -374,7 +376,7 @@
     </section>
     <!-- //TENTANG -->
 
-    <section id="skills" class="full-hight px-lg-5">
+    <section id="skills" class="full-height px-lg-5">
       <div class="container gy-4">
         <div class="row p-4">
           <div class="col-md-8" data-aos="fade-up">
@@ -383,39 +385,107 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-6" data-aos="fade-up">
+        <div class="col-md-12">
+          <!-- Keahlian Utama -->
+          <div class="col-md-12" data-aos="fade-up">
             <h5>Keahlian Utama</h5>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>PHP</li>
-            </ul>
+            <div class="d-flex flex-row flex-wrap justify-content-center">
+              <div class="card skill-card mx-2 mb-4 shadow-effect bg-base rounded-4 p-4">
+                <img src="assets/images/html.png" class="card-img-top skill-icon" alt="HTML Icon">
+                <div class="card-body text-center">
+                  <h5 class="card-title">HTML</h5>
+                </div>
+              </div>
+              <div class="card skill-card mx-2 mb-4 shadow-effect bg-base rounded-4 p-4">
+                <img src="assets/images/css.png" class="card-img-top skill-icon" alt="CSS Icon">
+                <div class="card-body text-center">
+                  <h5 class="card-title">CSS</h5>
+                </div>
+              </div>
+              <div class="card skill-card mx-2 mb-4 shadow-effect bg-base rounded-4 p-4">
+                <img src="assets/images/js.png" class="card-img-top skill-icon" alt="JavaScript Icon">
+                <div class="card-body text-center">
+                  <h5 class="card-title">JavaScript</h5>
+                </div>
+              </div>
+              <div class="card skill-card mx-2 mb-4 shadow-effect bg-base rounded-4 p-4">
+                <img src="assets/images/php.png" class="card-img-top skill-icon" alt="PHP Icon">
+                <div class="card-body text-center">
+                  <h5 class="card-title">PHP</h5>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <!-- Keahlian Pendukung -->
+          <div class="col-md-12" data-aos="fade-up" data-aos-delay="100">
             <h5>Keahlian Pendukung</h5>
-            <ul>
-              <li>Penetration Testing Dasar</li>
-              <li>Konfigurasi MikroTik Autonomous System</li>
-              <li>Instalasi Alat-alat Jaringan</li>
-            </ul>
+            <div class="d-flex flex-row flex-wrap justify-content-center">
+              <div class="card skill-card mx-2 mb-4 shadow-effect bg-base rounded-4 p-4">
+                <img src="assets/images/pentest.png" class="card-img-top skill-icon" alt="Penetration Testing Icon">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Penetration Testing Dasar</h5>
+                </div>
+              </div>
+              <div class="card skill-card mx-2 mb-4 shadow-effect bg-base rounded-4 p-4">
+                <img src="assets/images/mikrotik.png" class="card-img-top skill-icon" alt="MikroTik Icon"
+                  style="filter: brightness(10) contrast(10);">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Konfigurasi MikroTik</h5>
+                </div>
+              </div>
+              <div class="card skill-card mx-2 mb-4 shadow-effect bg-base rounded-4 p-4">
+                <img src="assets/images/jaringan.png" class="card-img-top skill-icon" alt="Network Installation Icon">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Instalasi Alat-alat Jaringan</h5>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <!-- Belajar Saat Ini -->
+          <div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
             <h5>Belajar Saat Ini</h5>
-            <ul>
-              <li>react navive</li>
-              <li>React js</li>
-              <li>Nodejs</li>
-              <li>Express js</li>
-            </ul>
+            <div class="d-flex flex-row flex-wrap justify-content-center">
+              <div class="card skill-card mx-2 mb-4 shadow-effect bg-base rounded-4 p-4">
+                <img src="/assets/images/react.png" class="card-img-top skill-icon" alt="React Native Icon">
+                <div class="card-body text-center">
+                  <h5 class="card-title">React Native</h5>
+                </div>
+              </div>
+              <div class="card skill-card mx-2 mb-4 shadow-effect bg-base rounded-4 p-4">
+                <img src="/assets/images/react.png" class="card-img-top skill-icon" alt="React JS Icon">
+                <div class="card-body text-center">
+                  <h5 class="card-title">React JS</h5>
+                </div>
+              </div>
+              <div class="card skill-card mx-2 mb-4 shadow-effect bg-base rounded-4 p-4">
+                <img src="assets/images/nodejs.png" class="card-img-top skill-icon" alt="Node.js Icon">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Node.js</h5>
+                </div>
+              </div>
+              <div class="card skill-card mx-2 mb-4 shadow-effect bg-base rounded-4 p-4">
+                <img src="assets/images/express.png" class="card-img-top skill-icon" alt="Express JS Icon"
+                  style="filter: contrast(10);">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Express.js</h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
     </section>
+
+
+
+
+
+
+
+
+
 
     <!-- MINAT -->
     <section id="interests" class="full-hight px-lg-5">
